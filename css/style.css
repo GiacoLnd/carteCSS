@@ -1,0 +1,94 @@
+*{
+    font-family: Poppins, sans-serif;
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+    }
+    
+h1 {
+        font-size: 25px;
+        margin-bottom: 10px;
+        }
+    
+p{
+        font-size: 14px;
+    }
+
+#container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(68, 117, 136, 0.548);
+    padding: 30px;
+    gap: 30px;
+}
+
+.card{
+    width: 300px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid black;
+    transition: 0.3s;
+
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card:hover .card-header img{
+    transform:scale(1.15);
+    filter: grayscale(0);
+}
+
+.card-header{
+    position:relative;
+    overflow: hidden;
+}
+.card-header img{
+    height: 200px;
+    width: 100%;
+    border-radius:10px 10px 0px 0px ;
+    filter:grayscale(1);
+    transition: 0.5s;
+    position:relative;
+    
+}
+
+.card-header img:hover{
+    filter:grayscale(0);
+}
+.card-text{
+    padding: 30px;
+}
+
+.card-text h1{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.card-text{
+    font-size: 14px;
+
+}
+
+.heart{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    position:absolute;
+    top:0;
+    left:0;
+    color: red;
+    font-size: 25px;
+    left: -40px;
+    transition:0.5s;
+}
+.card:hover .heart{
+    left:0;
+}
